@@ -185,6 +185,7 @@ Planned Tableau dashboard sections:
 
 ### Dashboard Overview
 ![alt text](image.png)
+![alt text](image-1.png)
 
 
 ---
@@ -390,6 +391,7 @@ Tableau 대시보드 구성 예정 항목:
 
 ### Dashboard Overview
 ![alt text](image.png)
+![alt text](image-2.png)
 
 ---
 
