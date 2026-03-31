@@ -370,6 +370,11 @@ Tableau 대시보드 구성 예정 항목:
 - 세그먼트별 매출 기여도
 - 리텐션 / 코호트 요약
 
+## 📷 Dashboard Preview
+
+### Dashboard Overview
+![alt text](image.png)
+
 ---
 
 ## 💡 비즈니스 시사점
