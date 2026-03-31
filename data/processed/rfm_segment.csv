@@ -1,0 +1,7 @@
+segment,customers,customer_share_pct,total_revenue,avg_revenue,revenue_share_pct,revenue_efficiency
+Big Spenders,35206,37.71,9416360.00,267.44,71.22,1.89
+Hibernating,26505,28.39,1233320.00,46.54,9.33,0.33
+Recent Customers,21641,23.18,1201110.00,55.50,9.08,0.39
+At Risk,8202,8.79,891769.00,108.73,6.74,0.77
+VIP,936,1.00,306578.00,327.54,2.32,2.31
+Loyal,868,0.93,173064.00,199.38,1.31,1.41
