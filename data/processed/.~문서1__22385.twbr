@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='order_summary' inline='true' name='federated.0cdgwyp11jc5j013jecho1hlc1cz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='order_summary' name='textscan.1xv98p100l2w3710k4eqv0uo4v28'>
+            <connection class='textscan' directory='/Users/minsuahong/Desktop/ecommerce-data-analysis/data/processed' filename='order_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xv98p100l2w3710k4eqv0uo4v28' name='order_summary.csv' table='[order_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='string' name='customer_unique_id' ordinal='1' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='2' />
+            <column datatype='string' name='order_status' ordinal='3' />
+            <column datatype='integer' name='items_count' ordinal='4' />
+            <column datatype='real' name='order_revenue' ordinal='5' />
+            <column datatype='real' name='freight_total' ordinal='6' />
+            <column datatype='string' name='order_month' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_unique_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_unique_id]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>customer_unique_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_purchase_timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_purchase_timestamp]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>order_purchase_timestamp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[items_count]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>items_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[order_revenue]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>order_revenue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight_total]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>freight_total</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_month]</local-name>
+            <parent-name>[order_summary.csv]</parent-name>
+            <remote-alias>order_month</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='order_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[order_summary.csv_588373A757A64C629F95E476F8B7C3C0]' role='measure' type='quantitative' />
+      <column caption='Customer Unique Id' datatype='string' name='[customer_unique_id]' role='dimension' type='nominal' />
+      <column caption='Freight Total' datatype='real' name='[freight_total]' role='measure' type='quantitative' />
+      <column caption='Items Count' datatype='integer' name='[items_count]' role='measure' type='quantitative' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Order Month' datatype='string' name='[order_month]' role='dimension' type='nominal' />
+      <column caption='Order Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Order Revenue' datatype='real' name='[order_revenue]' role='measure' type='quantitative' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='order_summary.csv' id='order_summary.csv_588373A757A64C629F95E476F8B7C3C0'>
+            <properties context=''>
+              <relation connection='textscan.1xv98p100l2w3710k4eqv0uo4v28' name='order_summary.csv' table='[order_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='string' name='customer_unique_id' ordinal='1' />
+                  <column datatype='datetime' name='order_purchase_timestamp' ordinal='2' />
+                  <column datatype='string' name='order_status' ordinal='3' />
+                  <column datatype='integer' name='items_count' ordinal='4' />
+                  <column datatype='real' name='order_revenue' ordinal='5' />
+                  <column datatype='real' name='freight_total' ordinal='6' />
+                  <column datatype='string' name='order_month' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='rfm_segment' inline='true' name='federated.0edy33s047k5631bu5f6m1cb7o09' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='rfm_segment' name='textscan.1pu2fia19gogpx1b38b3u0ia5xqd'>
+            <connection class='textscan' directory='/Users/minsuahong/Desktop/ecommerce-data-analysis/data/processed' filename='rfm_segment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pu2fia19gogpx1b38b3u0ia5xqd' name='rfm_segment.csv' table='[rfm_segment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='segment' ordinal='0' />
+            <column datatype='integer' name='customers' ordinal='1' />
+            <column datatype='real' name='customer_share_pct' ordinal='2' />
+            <column datatype='real' name='total_revenue' ordinal='3' />
+            <column datatype='real' name='avg_revenue' ordinal='4' />
+            <column datatype='real' name='revenue_share_pct' ordinal='5' />
+            <column datatype='real' name='revenue_efficiency' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customers]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>customers</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_share_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_share_pct]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>customer_share_pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_share_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_share_pct]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>revenue_share_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_efficiency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_efficiency]</local-name>
+            <parent-name>[rfm_segment.csv]</parent-name>
+            <remote-alias>revenue_efficiency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='rfm_segment.csv' datatype='table' name='[__tableau_internal_object_id__].[rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA]' role='measure' type='quantitative' />
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative' />
+      <column caption='Customer Share Pct' datatype='real' name='[customer_share_pct]' role='measure' type='quantitative' />
+      <column caption='Customers' datatype='integer' name='[customers]' role='measure' type='quantitative' />
+      <column caption='Revenue Efficiency' datatype='real' name='[revenue_efficiency]' role='measure' type='quantitative' />
+      <column caption='Revenue Share Pct' datatype='real' name='[revenue_share_pct]' role='measure' type='quantitative' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <column caption='Total Revenue' datatype='real' name='[total_revenue]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='rfm_segment.csv' id='rfm_segment.csv_AAB4250C5EF5457C8A916B2190868BCA'>
+            <properties context=''>
+              <relation connection='textscan.1pu2fia19gogpx1b38b3u0ia5xqd' name='rfm_segment.csv' table='[rfm_segment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='segment' ordinal='0' />
+                  <column datatype='integer' name='customers' ordinal='1' />
+                  <column datatype='real' name='customer_share_pct' ordinal='2' />
+                  <column datatype='real' name='total_revenue' ordinal='3' />
+                  <column datatype='real' name='avg_revenue' ordinal='4' />
+                  <column datatype='real' name='revenue_share_pct' ordinal='5' />
+                  <column datatype='real' name='revenue_efficiency' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='cohort_retention' inline='true' name='federated.02daja51hd8lsf186r8321dbploi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cohort_retention' name='textscan.163tfr60xkx4z519lk3z51om7e82'>
+            <connection class='textscan' directory='/Users/minsuahong/Desktop/ecommerce-data-analysis/data/processed' filename='cohort_retention.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.163tfr60xkx4z519lk3z51om7e82' name='cohort_retention.csv' table='[cohort_retention#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='cohort_month' ordinal='0' />
+            <column datatype='integer' name='cohort_index' ordinal='1' />
+            <column datatype='real' name='retention_pct' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cohort_retention.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cohort_month]</local-name>
+            <parent-name>[cohort_retention.csv]</parent-name>
+            <remote-alias>cohort_month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[cohort_retention.csv_6BDC061C4EC947328F6EFFDCDA329DAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort_index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cohort_index]</local-name>
+            <parent-name>[cohort_retention.csv]</parent-name>
+            <remote-alias>cohort_index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_retention.csv_6BDC061C4EC947328F6EFFDCDA329DAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retention_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[retention_pct]</local-name>
+            <parent-name>[cohort_retention.csv]</parent-name>
+            <remote-alias>retention_pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_retention.csv_6BDC061C4EC947328F6EFFDCDA329DAF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cohort_retention.csv' datatype='table' name='[__tableau_internal_object_id__].[cohort_retention.csv_6BDC061C4EC947328F6EFFDCDA329DAF]' role='measure' type='quantitative' />
+      <column caption='Cohort Index' datatype='integer' name='[cohort_index]' role='measure' type='quantitative' />
+      <column caption='Cohort Month' datatype='string' name='[cohort_month]' role='dimension' type='nominal' />
+      <column caption='Retention Pct' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[retention_pct]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cohort_retention.csv' id='cohort_retention.csv_6BDC061C4EC947328F6EFFDCDA329DAF'>
+            <properties context=''>
+              <relation connection='textscan.163tfr60xkx4z519lk3z51om7e82' name='cohort_retention.csv' table='[cohort_retention#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='cohort_month' ordinal='0' />
+                  <column datatype='integer' name='cohort_index' ordinal='1' />
+                  <column datatype='real' name='retention_pct' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='고객 세그먼트 분포'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rfm_segment' name='federated.0edy33s047k5631bu5f6m1cb7o09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0edy33s047k5631bu5f6m1cb7o09'>
+            <column caption='Customers' datatype='integer' name='[customers]' role='measure' type='quantitative' />
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column-instance column='[customers]' derivation='Sum' name='[sum:customers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0edy33s047k5631bu5f6m1cb7o09].[sum:customers:qk]</rows>
+        <cols>[federated.0edy33s047k5631bu5f6m1cb7o09].[none:segment:nk]</cols>
+      </table>
+      <simple-id uuid='{D8230990-C630-418C-8876-3F350A714194}' />
+    </worksheet>
+    <worksheet name='세그먼트별 매출 기여도'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rfm_segment' name='federated.0edy33s047k5631bu5f6m1cb7o09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0edy33s047k5631bu5f6m1cb7o09'>
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column-instance column='[total_revenue]' derivation='Sum' name='[sum:total_revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Revenue' datatype='real' name='[total_revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0edy33s047k5631bu5f6m1cb7o09].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0edy33s047k5631bu5f6m1cb7o09].[sum:total_revenue:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0edy33s047k5631bu5f6m1cb7o09].[sum:total_revenue:qk]' scope='rows' value='Total Revenue' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0edy33s047k5631bu5f6m1cb7o09].[sum:total_revenue:qk]</rows>
+        <cols>[federated.0edy33s047k5631bu5f6m1cb7o09].[none:segment:nk]</cols>
+      </table>
+      <simple-id uuid='{F2720CB7-0CEC-4AB4-9E79-0CC84A87EE51}' />
+    </worksheet>
+    <worksheet name='월별 AOV 추이'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='order_summary' name='federated.0cdgwyp11jc5j013jecho1hlc1cz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cdgwyp11jc5j013jecho1hlc1cz'>
+            <column-instance column='[order_revenue]' derivation='Avg' name='[avg:order_revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_month]' derivation='None' name='[none:order_month:nk]' pivot='key' type='nominal' />
+            <column caption='Order Month' datatype='string' name='[order_month]' role='dimension' type='nominal' />
+            <column caption='Order Revenue' datatype='real' name='[order_revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[avg:order_revenue:qk]</rows>
+        <cols>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[none:order_month:nk]</cols>
+      </table>
+      <simple-id uuid='{F8581DEB-3824-4CD4-8ED6-35F2F88BD510}' />
+    </worksheet>
+    <worksheet name='월별 매출 추이'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='order_summary' name='federated.0cdgwyp11jc5j013jecho1hlc1cz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cdgwyp11jc5j013jecho1hlc1cz'>
+            <column-instance column='[order_month]' derivation='None' name='[none:order_month:nk]' pivot='key' type='nominal' />
+            <column caption='Order Month' datatype='string' name='[order_month]' role='dimension' type='nominal' />
+            <column caption='Order Revenue' datatype='real' name='[order_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[order_revenue]' derivation='Sum' name='[sum:order_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[sum:order_revenue:qk]</rows>
+        <cols>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[none:order_month:nk]</cols>
+      </table>
+      <simple-id uuid='{488CDF5C-E295-44BC-AEF7-6029C58B4D3C}' />
+    </worksheet>
+    <worksheet name='월별 주문 수 추이'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='order_summary' name='federated.0cdgwyp11jc5j013jecho1hlc1cz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cdgwyp11jc5j013jecho1hlc1cz'>
+            <column-instance column='[order_id]' derivation='Count' name='[cnt:order_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_month]' derivation='None' name='[none:order_month:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Order Month' datatype='string' name='[order_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[cnt:order_id:qk]</rows>
+        <cols>[federated.0cdgwyp11jc5j013jecho1hlc1cz].[none:order_month:nk]</cols>
+      </table>
+      <simple-id uuid='{54D9255B-5382-42D2-B0C2-F07515F5055F}' />
+    </worksheet>
+    <worksheet name='코호트 리텐션 히트맵'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cohort_retention' name='federated.02daja51hd8lsf186r8321dbploi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02daja51hd8lsf186r8321dbploi'>
+            <column caption='Cohort Index' datatype='integer' name='[cohort_index]' role='measure' type='quantitative' />
+            <column caption='Cohort Month' datatype='string' name='[cohort_month]' role='dimension' type='nominal' />
+            <column-instance column='[cohort_month]' derivation='None' name='[none:cohort_month:nk]' pivot='key' type='nominal' />
+            <column caption='Retention Pct' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[retention_pct]' role='measure' type='quantitative' />
+            <column-instance column='[cohort_index]' derivation='Sum' name='[sum:cohort_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retention_pct]' derivation='Sum' name='[sum:retention_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.02daja51hd8lsf186r8321dbploi].[sum:retention_pct:qk]' />
+              <text column='[federated.02daja51hd8lsf186r8321dbploi].[sum:retention_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02daja51hd8lsf186r8321dbploi].[none:cohort_month:nk]</rows>
+        <cols>[federated.02daja51hd8lsf186r8321dbploi].[sum:cohort_index:qk]</cols>
+      </table>
+      <simple-id uuid='{39CD3986-5E70-4596-8851-666A58629318}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='대시보드 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='75625' id='3' name='코호트 리텐션 히트맵' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='22375' id='9' type-v2='text' w='82400' x='800' y='76625'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontname='Benton Sans Book' fontsize='18' italic='true'>코호트 리텐션 분석 결과, 대부분의 고객은 첫 구매 이후 빠르게 이탈했습니다.  </run>
+                  <run fontalignment='1'>Æ&#10;</run>
+                  <run bold='true' fontalignment='1' fontname='Benton Sans Book' fontsize='18' italic='true'>특히 2개월차부터 리텐션이 크게 하락해, 재구매 전환과 고객 유지 전략이 중요함을 확인할 수 있었습니다.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8125' id='8' name='코호트 리텐션 히트맵' pane-specification-id='0' param='[federated.02daja51hd8lsf186r8321dbploi].[sum:retention_pct:qk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A9F3BDC3-4B92-4D66-9AF4-7811BA85DECA}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='이커머스 고객 분석 대시보드'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='25390' id='5' name='월별 매출 추이' w='49414' x='50000' y='5469'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='34244' id='8' name='세그먼트별 매출 기여도' w='49414' x='50000' y='64714'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='29688' id='6' name='월별 AOV 추이' w='98828' x='586' y='30859'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='25390' id='9' name='월별 주문 수 추이' w='49414' x='586' y='5469'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='34244' id='10' name='고객 세그먼트 분포' w='49414' x='586' y='64714'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4427' id='13' type-v2='text' w='98828' x='586' y='1042'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='18' italic='true' underline='true'>이커머스 고객 분석 대시보드 / 이커머스 고객 분석 대시보드</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4167' id='14' type-v2='text' w='98828' x='586' y='60547'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#898989' fontsize='15'>초기 월은 주문 수가 매우 적어 평균 주문금액 변동성이 크게 나타났으며, 이후 기간에는 대체로 130~150 수준에서 안정적으로 유지되었다.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='11' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='221' h='29817' id='9' is-fixed='true' name='월별 주문 수 추이' w='49414' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='221' h='29817' id='5' is-fixed='true' name='월별 매출 추이' w='49414' x='50000' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='252' h='33855' id='6' is-fixed='true' name='월별 AOV 추이' w='98828' x='586' y='30859'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='34244' id='10' is-fixed='true' name='고객 세그먼트 분포' w='49414' x='586' y='64714'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='34244' id='8' is-fixed='true' name='세그먼트별 매출 기여도' w='49414' x='50000' y='64714'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7E5ED439-CE35-442A-9F37-F9F39E44A100}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='월별 주문 수 추이'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2C119BE-2483-49BE-8B36-0C2BB0B3B0F1}' />
+    </window>
+    <window class='worksheet' name='월별 매출 추이'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AAEA48D0-D9CC-4EDF-A5B7-BB533BBDCB24}' />
+    </window>
+    <window class='worksheet' name='월별 AOV 추이'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EA91401-74B4-4E7E-A269-6885C046DA35}' />
+    </window>
+    <window class='worksheet' name='고객 세그먼트 분포'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{47178D5E-6241-422F-B5E2-DBD5388807A8}' />
+    </window>
+    <window class='worksheet' name='세그먼트별 매출 기여도'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B95D0EBA-5A76-4130-966A-54A01FA82C80}' />
+    </window>
+    <window class='worksheet' name='코호트 리텐션 히트맵'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02daja51hd8lsf186r8321dbploi].[sum:retention_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C49BE179-EC8C-4A82-B371-68220ED4308D}' />
+    </window>
+    <window class='dashboard' name='이커머스 고객 분석 대시보드'>
+      <viewpoints>
+        <viewpoint name='고객 세그먼트 분포'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='세그먼트별 매출 기여도'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='월별 AOV 추이'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='월별 매출 추이'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='월별 주문 수 추이'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9A85722F-0FFD-46C6-8906-061A91E81634}' />
+    </window>
+    <window class='dashboard' maximized='true' name='대시보드 2'>
+      <viewpoints>
+        <viewpoint name='코호트 리텐션 히트맵'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{4F9DFFDE-C648-49B3-9BB5-A04DB706DC24}' />
+    </window>
+  </windows>
+</workbook>

@@ -136,6 +136,11 @@ First, the raw tables were checked to validate row counts, key structures, and j
 - **Recent Customers** and **Hibernating** segments had relatively low revenue efficiency, suggesting the need for conversion and reactivation strategies.
 - Overall, the analysis suggests that retaining high-value customers and converting one-time buyers into repeat customers may be more impactful than focusing only on new customer acquisition.
 
+### Cohort Analysis Insight
+Cohort retention analysis shows that most customers dropped off quickly after their first purchase.  
+Retention declined sharply from the second month onward, and remained low in later periods.  
+This suggests that improving repeat purchase conversion and strengthening retention strategies may be more important than focusing only on new customer acquisition.
+
 ---
 
 ## 🧮 SQL Analysis
@@ -331,6 +336,11 @@ ecommerce-data-analysis/
 - **VIP** 세그먼트는 고객 비중은 **1.00%**에 불과했지만, 매출 효율은 **2.31**로 가장 높게 나타났습니다.
 - **Recent Customers**와 **Hibernating** 세그먼트는 고객 수 대비 매출 효율이 낮아, 재구매 전환 및 재활성화 전략이 필요하다는 점을 확인했습니다.
 - 전반적으로 신규 고객 유입 확대보다, 고가치 고객 유지와 1회 구매 고객의 재구매 전환이 더 중요한 과제로 해석할 수 있었습니다.
+
+### 코호트 분석 인사이트
+코호트 리텐션 분석 결과, 대부분의 고객은 첫 구매 이후 빠르게 이탈하는 패턴을 보였습니다.  
+특히 2개월차 리텐션이 크게 낮아지며, 이후 월에서도 유지율이 높지 않았습니다.  
+따라서 이커머스 성과 개선을 위해서는 신규 고객 유입 확대뿐 아니라, 첫 구매 고객을 재구매 고객으로 전환시키는 CRM 및 프로모션 전략이 중요하다고 해석할 수 있습니다.
 
 ---
 
