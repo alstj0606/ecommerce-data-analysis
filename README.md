@@ -176,6 +176,12 @@ Planned Tableau dashboard sections:
 - Revenue contribution by segment
 - Retention / cohort summary
 
+## 📷 Dashboard Preview
+
+### Dashboard Overview
+![alt text](image.png)
+
+
 ---
 
 ## 💡 Business Implication
